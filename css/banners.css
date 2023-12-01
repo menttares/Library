@@ -6,7 +6,7 @@
     /* background-image: url(/src/files/Welcome.jpeg);
     background-size:contain; */
 
-    background: url(/files/Welcome.jpeg) lightgray 50% / cover no-repeat;
+    background: url("/files/Welcome.jpeg") lightgray 50% / cover no-repeat;
 }
 
 .banner__logo {
