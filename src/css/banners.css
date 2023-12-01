@@ -1,0 +1,41 @@
+.banner {
+
+    height: 600px;
+    width: 100%;
+
+    /* background-image: url(/src/files/Welcome.jpeg);
+    background-size:contain; */
+
+    background: url(/src/files/Welcome.jpeg) lightgray 50% / cover no-repeat;
+}
+
+.banner__logo {
+    position: relative;
+    top: 220px;
+    display: flex;
+    width: 600px;
+    height: 220px;
+    padding: 35px 40px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    background-color: black;
+
+    
+}
+
+.banner__text {
+    display: block;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    /* 125% */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}

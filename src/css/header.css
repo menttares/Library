@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'ForumRegular';
+    src: url('/src/fonts/Forum-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'InterRegular';
+    src: url('путь/к/вашему/шрифту/Inter-Regular.woff2') format('woff2'),
+        url('путь/к/вашему/шрифту/Inter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'InterRegular', sans-serif;
+}
+
+.header {
+    display: inline-flex;
+
+    width: 100%;
+    height: 90px;
+    background-color: #0C0C0E;
+
+    color: #FFFFFF;
+    justify-content: space-between;
+
+}
+
+
+.header__h1 {
+    font-size: 30px;
+    align-self: center;
+    letter-spacing: 2%;
+    margin-left: 20px;
+    font-family: 'ForumRegular', sans-serif;
+}
+
+.header__container {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.header__container-nav {
+    font-size: 20px;
+    display: flex;
+
+    align-self: center;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+
+.header__link {
+    display: block;
+    align-self: center;
+}
+
+.header__profile {
+    width: 28px;
+    align-self: center;
+    margin-right: 20px;
+}
