@@ -1,0 +1,230 @@
+.Favorites {
+    padding: 20px;
+}
+
+.Favorites__container-header {
+    text-align: center;
+}
+
+.Favorites__header {
+    display: block;
+
+    color: #0C0C0E;
+
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    /* 100% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.Favorites__line {
+
+    margin-top: 20px;
+
+    width: 50px;
+    height: 1px;
+
+    background: #0C0C0E;
+
+}
+
+.Favorites__panel-header {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+}
+
+.Favorites__radio-panel {
+    display: flex;
+    gap: 90px;
+    margin-top: 40px;
+}
+
+.Favorites__radio-text {
+
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+/* Скрыть оригинальный элемент radio */
+.Favorites__radio-input {
+    opacity: 0;
+    position: absolute;
+}
+
+/* Создать кастомный вид круга */
+.Favorites__radio-input+label {
+    position: relative;
+    padding-left: 30px;
+    /* Регулировка отступа для круга */
+    cursor: pointer;
+}
+
+.Favorites__radio-input+label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 17px;
+    /* Размер radio */
+    height: 17px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+
+/* Второй внутренний круг для эффекта */
+.Favorites__radio-input:checked+label::after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    /* Регулировка отступа для внутреннего круга */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7px;
+    /* Размер внутреннего круга */
+    height: 7px;
+    background-color: black;
+    /* Цвет внутреннего круга */
+    border-radius: 50%;
+}
+
+.Favorites__container-books {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.Favorites__book {
+    position: relative;
+    width: 590px;
+    height: 555px;
+
+    border: 1px solid black;
+
+    padding: 20px;
+
+    padding-right: 0px;
+
+    margin-top: 40px;
+}
+
+.Favorites__book-header {
+    color: #000;
+    font-family: Forum;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.Favorites__book-header::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 60px;
+    background: #BB945F;
+    border-color: #BB945F;
+}
+
+.Favorites__book-name>span {
+    display: block;
+}
+
+.Favorites__book-name>span:first-child {
+    color: #000;
+
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    /* 266.667% */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.Favorites__book-name>span:last-child {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+
+.Favorites__container-description {
+    margin-top: 20px;
+}
+
+.Favorites__book-description {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    /* 266.667% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.Favorites__book-description-colum {
+    width: 355px;
+}
+
+.Favorites__container-button {
+    margin-top: 15px;
+}
+
+.Favorites__button-buy {
+    width: 75px;
+    height: 30px;
+
+    color: #0C0C0E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+
+.Favorites__book-img {
+    width: 200px;
+    height: 300px;
+    flex-shrink: 0;
+}
+
+.Favorites__container-description {
+    display: flex;
+}
+
+.Favorites__container-image {
+    display: flex;
+    justify-content: flex-end;
+    align-content: end;
+}
